@@ -40,6 +40,14 @@ html {
     background: #195c1f;
 }
 
+.heading {
+    font-size: 2rem;
+    color: #444;
+    padding-left: 0.5rem;
+    border-left: .4rem solid var(--green);
+    margin: 1.2rem;
+}
+
 
 /* Navigation and Title Bar CSS */
 
@@ -229,14 +237,15 @@ html {
 /* Products */
 
 .product .boxContainer {
+    padding: 1.4rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .product .boxContainer .box {
-    flex: 1 1 30rem;
-    border: 1rem solid rgba(0, 0, 0, .1);
+    flex: 1 1 20rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     text-align: center;
     position: relative;
@@ -252,18 +261,18 @@ html {
 
 .product .boxContainer .box .discount {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: .5rem;
+    left: .5rem;
     background: rgba(0, 255, 0, .1);
     color: var(--green);
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: .5rem 1rem;
 }
 
 .product .boxContainer .box .icons {
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: -8rem;
     display: flex;
     flex-flow: column;
     background: #fff;
@@ -272,11 +281,15 @@ html {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
+.product .boxContainer .box:hover .icons {
+    right: 1rem;
+}
+
 .product .boxContainer .box .icons a {
-    height: 4rem;
-    width: 4rem;
-    line-height: 4rem;
-    font-size: 1.5rem;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
     color: #333;
     border-radius: 5rem;
     margin: .1rem;
@@ -285,6 +298,51 @@ html {
 .product .boxContainer .box .icons a:hover {
     color: #fff;
     background: var(--green);
+}
+
+.product .boxContainer .box h3 {
+    color: #333;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.product .boxContainer .box .rating i {
+    color: gold;
+    font-size: 1.5rem;
+}
+
+.product .boxContainer .box .quantity {
+    padding: 1rem 0;
+    margin-right: 0.5rem;
+}
+
+.product .boxContainer .box .quantity span {
+    font-size: 1.4rem;
+}
+
+.product .boxContainer .box .quantity input {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    text-align: center;
+    background: rgba(0, 0, 0, .1);
+}
+
+.product .boxContainer .box .price {
+    font-weight: bolder;
+    color: var(--green);
+    font-size: 1.8rem;
+}
+
+.product .boxContainer .box .price span {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.product .boxContainer .box .btn {
+    display: block;
+    margin: 1rem;
 }
 
 
