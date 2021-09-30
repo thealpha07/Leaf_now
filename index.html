@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Now</title>
+    <link rel="icon" type="image/png" href="media/iconA.png">
+    <link rel="stylesheet" href="CSS/styleindex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Navigation and Title Bar -->
+    <div class="header1">
+        <a href="index.html" class="logo"> <img src="media/iconA.png"> Leaf Now</a>
+        <form action="" class="searchBarContainer">
+            <input type="search" id="searchBar" placeholder="Search...">
+            <label for="searchBar" class="fas fa-search"></label>
+        </form>
+    </div>
+
+    <div class="header2">
+
+        <div id="menuBar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="donate.html">Donate</a>
+            <a href="forum.html">Forum</a>
+        </nav>
+
+        <div class="butIcons">
+            <a href="#" class="fas fa-shopping-cart" id="cartButton"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-user-circle" id="loginButton"></a>
+        </div>
+
+        <form action="" class="loginForm">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="Your Email" class="box">
+            <input type="password" placeholder="Your Password" class="box">
+            <p>Forgot your password? <a href="register.html">Click Here</a></p>
+            <p>New user <a href="register.html">Create an Account</a></p>
+            <input type="submit" value="Login" class="btn">
+        </form>
+    </div>
+
+    <!-- Home Landing-->
+    <section class="home" id="home">
+
+        <!--Swipwe JS insertednhere-->
+        <div class="swiper homeSlider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(media/slider1.jpg);">
+                        <div class="content">
+                            <span> From the eastern part of the world, the plants that take little care.</span>
+                            <h3>Oriental BONSAI</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(media/slider2.jpg);">
+                        <div class="content">
+                            <span>It's still a mystery, Where does the water come from?</span>
+                            <h3>The Juicy SUCCULENTS</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(media/slider3.jpg);">
+                        <div class="content">
+                            <span>Small Potted plants are the new Fashion Statement</span>
+                            <h3>POT-A-PLANT</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!--Random Phrase starts-->
+    <div class="textBlock" data-aos="fade-down" data-aos-duration="2000">
+        <p>“Gardening is the greatest tonic and therapy a human being can have. Even if you have only a tiny piece of earth, you can create something beautiful, which we all have a great need for. If we begin by respecting plants, it’s inevitable we’ll respect
+            people.”
+        </p>
+        <h4 data-aos="fade-up" data-aos-duration="2000">— Audrey Hepburn</h4>
+    </div>
+
+    <!--Banner Section starts-->
+    <section class="bannerContainer">
+
+        <div class="banner">
+            <img src="media/banner1.jpg" alt="">
+            <div class="content">
+                <span>Looking for the Aesthatics?</span>
+                <h3>Latest Earthen Plants</h3>
+                <a href="shop.html" class="btn">Go To Shop</a>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="media/banner2.jpg" alt="">
+            <div class="content">
+                <span>Modern Lifestyle</span>
+                <h3>Designer Pots <br>+ Great Plants</h3>
+                <a href="shop.html" class="btn">Smash In</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="social">
+            <a id="IG" href="#"><i class="fab fa-instagram"></i></a>
+            <a id="FB" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a id="TW" href="#"><i class="fab fa-twitter"></i></a>
+            <a id="GIT" href="#"><i class="fab fa-github"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="#">Terms</a>
+            </li>
+
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+
+        <p class="copyright">
+            Novizio @2021
+        </p>
+
+    </footer>
+
+    <script src="node_modules/medium-zoom/dist/medium-zoom.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="JS/jsindex.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
