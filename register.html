@@ -37,37 +37,37 @@
     <div class="container">
         <div class="title">Register With Us...</div>
         <div class="content">
-            <form action="#">
+            <form method="POST" name="regForm" id="registerForm">
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Full Name</span>
-                        <input type="text" placeholder="Enter your name" required>
+                        <input type="text" placeholder="Enter your name" required id="nameField">
                     </div>
                     <div class="input-box">
                         <span class="details">Username</span>
-                        <input type="text" placeholder="Enter your username" required>
+                        <input type="text" placeholder="Enter your username" required id="usernameField">
                     </div>
                     <div class="input-box">
                         <span class="details">Email</span>
-                        <input type="text" placeholder="Enter your email" required>
+                        <input type="text" placeholder="Enter your email" required id="emailField">
                     </div>
                     <div class="input-box">
                         <span class="details">Phone Number</span>
-                        <input type="text" placeholder="Enter your number" required>
+                        <input type="text" placeholder="Enter your number" required id="phoneField">
                     </div>
                     <div class="input-box">
                         <span class="details">Password</span>
-                        <input type="text" placeholder="Enter your password" required>
+                        <input type="password" placeholder="Enter your password" required id="passwordField" name="password">
                     </div>
                     <div class="input-box">
                         <span class="details">Confirm Password</span>
-                        <input type="text" placeholder="Confirm your password" required>
+                        <input type="password" placeholder="Confirm your password" required id="cPasswordField" name="conpassword">
                     </div>
                 </div>
                 <div class="gender-details">
-                    <input type="radio" name="gender" id="dot-1">
-                    <input type="radio" name="gender" id="dot-2">
-                    <input type="radio" name="gender" id="dot-3">
+                    <input type="radio" name="gender" id="dot-1" value="Male">
+                    <input type="radio" name="gender" id="dot-2" value="Female">
+                    <input type="radio" name="gender" id="dot-3" value="Prefer not to Say">
                     <span class="gender-title">Gender</span>
                     <div class="category">
                         <label for="dot-1">
@@ -84,8 +84,8 @@
             </label>
                     </div>
                 </div>
-                <div class="button">
-                    <input type="submit" value="Register">
+                <div class="button" id="registerButton">
+                    <input type="submit" value="Register" onclick="return passVal();">
                 </div>
             </form>
         </div>
@@ -124,7 +124,18 @@
 
     </footer>
 
-    <script src="JS/jsregister.js"></script>
+    <script type="text/javascript">
+        //Password Validation
+        function passVal() {
+            if (regForm.conpassword.value != regForm.password.value) {
+                alert('Passwords do not match');
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js" integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="JS/jsregister.js"></script>
 
 </body>
 
