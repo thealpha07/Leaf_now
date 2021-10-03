@@ -198,18 +198,20 @@ form .input-box span.details {
     display: block;
     font-weight: 500;
     margin-bottom: 5px;
+    font-size: 18px;
 }
 
 .user-details .input-box input {
     height: 45px;
     width: 100%;
     outline: none;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 5px;
     padding-left: 15px;
     border: 1px solid #ccc;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
+    text-transform: none;
 }
 
 .user-details .input-box input:focus,
@@ -218,7 +220,7 @@ form .input-box span.details {
 }
 
 form .gender-details .gender-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -238,6 +240,7 @@ form .category label {
 form .category label .dot {
     height: 18px;
     width: 18px;
+    font-size: 16px;
     border-radius: 50%;
     margin-right: 10px;
     background: #d9d9d9;
@@ -254,6 +257,16 @@ form .category label .dot {
 
 form input[type="radio"] {
     display: none;
+}
+
+.user-details .input-box input[type="password"]:placeholder-shown {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.user-details .input-box input[type="password"] {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 form .button {

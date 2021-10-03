@@ -253,12 +253,9 @@ body {
     padding-top: 6px;
 }
 
-.right-side .button {
+.right-side .btn {
     display: inline-block;
     margin-top: 12px;
-}
-
-.right-side .button input[type="button"] {
     color: #fff;
     font-size: 18px;
     outline: none;
@@ -270,8 +267,8 @@ body {
     transition: all 0.3s ease;
 }
 
-.button input[type="button"]:hover {
-    background: var(--green);
+.right-side .btn:hover {
+    background: green
 }
 
 
