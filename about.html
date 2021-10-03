@@ -60,19 +60,18 @@
                 <div class="right-side">
                     <div class="topic-text">Send us a message</div>
                     <p>If you have any work from me or any types of quries related to our institution, you can send us message from here. It's our pleasure to help you.</p>
-                    <form action="#">
+                    <form action="#" id="contactForm">
                         <div class="input-box">
-                            <input type="text" placeholder="Enter your name">
+                            <input type="text" placeholder="Enter your name" id="nameField">
                         </div>
                         <div class="input-box">
-                            <input type="text" placeholder="Enter your email">
+                            <input type="text" placeholder="Enter your email" id="emailField">
                         </div>
                         <div class="input-box message-box">
-                            <input type="text" placeholder="Message Here">
+                            <textarea type="text" placeholder="Message Here" id="messageField"></textarea>
                         </div>
-                        <div class="button">
-                            <input type="button" value="Send Now">
-                        </div>
+                        <button class="btn" id="msgWrite" type="submit"> Message </button>
+
                     </form>
                 </div>
             </div>
@@ -113,13 +112,7 @@
 
     </footer>
 
-    <script src="node_modules/medium-zoom/dist/medium-zoom.min.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="JS/jsshop.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script type="module" src="JS/jsabout.js"></script>
 
 </body>
 
